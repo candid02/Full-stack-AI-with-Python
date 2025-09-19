@@ -47,3 +47,13 @@ for idx, item in enumerate(menu, start=1):
     print(f"Menu item {idx} is {item}")
  
 
+# You're preparing an order summary with customer names and their total bill.
+#TASK : use two lists: one for names and one for bills. print: "[Name]paid rupees [amount]"
+
+#Zip -- combines two lists into a single iterable of tuples
+
+names = ["Ritu", "Ayushi", "Riya", "Ravnit"]
+bills = [50, 70, 100, 55]
+
+for name, amount in zip(names, bills):
+    print(f"{name} paid rupees {amount}")
